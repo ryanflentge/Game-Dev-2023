@@ -1,12 +1,14 @@
 <html>
 <head>
-<body {
-background-color: #DBF9FC;
-}>
+<style> body {
+  background-image: url('example_img_girl.jpg');
+}
+</style>
 <title> Basic Web Stuff</title>
 </head>
+</body>
 <h5>Version 0.0.1</h5>
-<p style="background-image: url('https://variety.com/wp-content/uploads/2020/12/Dwayne_Johnson.png');">
+
 
 <h1 align=center>T3A04-Web-Basics-By-Ryan.html </h1>
 
