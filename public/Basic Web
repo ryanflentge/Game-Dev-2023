@@ -25,15 +25,12 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 <h3> Wtire about Ellis' 10 main areas of coding</h3>
 
-<input type=button value="0. Pseudo Code" onclick="{
-document.getElementById('myDiv01').innerHTML = 'Hello don\'t World'
-}">
+
 <input type=button value="V" onclick="{
-document.getElementById('myDiv01').innerHTML = 'store stuff'
+document.getElementById('myDiv01').innerHTML = 'Variables = store stuff'
 }">
 <input type=button value="I" onclick="{
-document.getElementById('myDiv01').innerHTML = 'Input adffgdsfsgsdfdfg<br>'
-+'sdfg<br>sdfg<br>output is...'
+document.getElementById('myDiv01').innerHTML = 'Input/Output = information into and out of your program'
 }">
 <input type=button value="D" onclick="{
 document.getElementById('myDiv01').innerHTML =
@@ -44,22 +41,25 @@ if (hour < 18) {
 greeting = \'Good day\';
 }">
 <input type=button value="E" onclick="{
-document.getElementById('myDiv01').innerHTML = 'trigger computer code'
+document.getElementById('myDiv01').innerHTML = 'Events = trigger computer code'
 }">
 <input type=button value="O" onclick="{
-document.getElementById('myDiv01').innerHTML = 'a named list of variables'
+document.getElementById('myDiv01').innerHTML = 'Objects = a named list of variables'
 }">
 <input type=button value="F" onclick="{
-document.getElementById('myDiv01').innerHTML = 'named group of code that can be called multiple times'
+document.getElementById('myDiv01').innerHTML = 'Functions = named group of code that can be called multiple times'
 }">
 <input type=button value="L" onclick="{
-document.getElementById('myDiv01').innerHTML = 'repeat stuff'
+document.getElementById('myDiv01').innerHTML = 'Loops = repeat stuff'
 }">
 <input type=button value="A" onclick="{
-document.getElementById('myDiv01').innerHTML = 'a numbered list of variables'
+document.getElementById('myDiv01').innerHTML = 'Arrays = a numbered list of variables'
 }">
 <input type=button value="C" onclick="{
-document.getElementById('myDiv01').innerHTML = 'groups variables and functions to make programming easier'
+document.getElementById('myDiv01').innerHTML = 'Classes = groups variables and functions to make programming easier'
+}">
+<input type=button value="+P" onclick="{
+document.getElementById('myDiv01').innerHTML = 'Psuedo Code = Hello don\t world'
 }">
 </pre>
 
