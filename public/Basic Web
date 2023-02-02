@@ -6,6 +6,7 @@ background-color: #DBF9FC;
 <title> Basic Web Stuff</title>
 </head>
 <h5>Version 0.0.1</h5>
+<p style="background-image: url('https://variety.com/wp-content/uploads/2020/12/Dwayne_Johnson.png');">
 
 <h1 align=center>T3A04-Web-Basics-By-Ryan.html </h1>
 
@@ -61,7 +62,7 @@ document.getElementById('myDiv01').innerHTML = 'Arrays = a numbered list of vari
 document.getElementById('myDiv01').innerHTML = 'Classes = groups variables and functions to make programming easier'
 }">
 <input type=button value="+P" onclick="{
-document.getElementById('myDiv01').innerHTML = 'Psuedo Code = Hello don\t world'
+document.getElementById('myDiv01').innerHTML = 'Psuedo Code = Hello don\'t world'
 }">
 </pre>
 
