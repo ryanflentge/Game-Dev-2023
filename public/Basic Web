@@ -1,10 +1,10 @@
 <html>
 <head>
-<title> Basic Web Stuff</title>
-</head>
 <body {
 background-color: #DBF9FC;
 }>
+<title> Basic Web Stuff</title>
+</head>
 <h5>Version 0.0.1</h5>
 
 <h1 align=center>T3A04-Web-Basics-By-Ryan.html </h1>
