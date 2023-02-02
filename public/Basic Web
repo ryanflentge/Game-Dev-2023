@@ -11,11 +11,11 @@
 <b><i>Plain Text </b></i><br>
 <hr>
 This is an image <br>
-<img width=200 src="http://hairlesscatblog.com/wp-content/uploads/2014/02/types-of-hairless-cats.jpg"><br><br>
+<img width=200 src="https://media.newyorker.com/photos/630e85c820c2208e4152741d/master/w_2560%2Cc_limit/Cassidy-Biden-Month.jpg"><br><br>
 
 Youtube Embedded video <br>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/kUTGTdc-qbg" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/27is5tVlBHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+ encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <hr>
 <div>This is a </div>
 <div><div><div>
