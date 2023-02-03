@@ -39,18 +39,30 @@
     
 
 <h2> Tables</h2>
-Table 1
+<u>Table 1</u>
 <table border=1>
   <tr><td>A</td><td>B</td></tr>
   <tr><td>1</td><td>2</td></tr>
 </table><br>
 <br>
-Table 2
+<u>Table 2</u>
 <table border=1>
   <tr><td>A</td><td>B</td><td>C</td><tr>
   <tr><td>1</td><td>2</td><td>3</td><tr>
   <tr><td>1</td><td>4</td><td>9</td><tr>
   <tr><td>1</td><td>16</td><td>81</td><tr>
+  <br>
+  
+  <h2>Advanced</h2>
+  
+  Move the image below 10 pixels with the button below<br>
+  <image id="myImage01" src="" style="position:relative; left:0; top:0; width:50; height:50; "><br>
+    
+  <input type=button value="Go left" onclick="{
+   document.getElementById('myimage01').style.left = '200px'
+   document.getElementById('myDiv01').innerHTML = 'It went left'
+                                              }">
+    <div id="myDiv01">...</div>
   
 
 
