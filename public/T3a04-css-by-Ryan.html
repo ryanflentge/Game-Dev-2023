@@ -1,7 +1,34 @@
 <h5>Version 0.0.1</h5><br>
 <h1 align=center>T3a04 CSS by Ryan</h1>
 <style> 
+  #frameDiv {
+    width: 400px;
+    height: 170px;
+    margin: 20px;
+    position: relative;
+    border: solid black 1px;
+    background-color: rgb(205, 242, 205);
+  }
 
+  img {
+    position: absolute;
+    z-index: 1;
+    width: 70px;
+    offset: path('M 50 80 C 150 -20 250 180 350 80') 150px auto 45deg;
+    animation: moveImg 4s 1s 3;
+  }
+
+  svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  @keyframes moveImg {
+    100%  { offset-distance: 100%; }
+  }
  #parentDIV{
   position: relative;
   width: 60%;
@@ -64,4 +91,10 @@ This is inset property:<br>
 <div id="parentDIV">
   <div id="myDIV">This DIV has a size defined by the distance of 20 pixels to the parent DIV element, on all four sides.</div>
 </div><br>
-
+This is offset property:<br>
+<div id="frameDiv">
+  <img src="img_fish.svg" alt="fish">
+  <svg fill="none" stroke="gray" stroke-width="2" stroke-dasharray="5,5">
+    <path d="M 50 80 C 150 -20 250 180 350 80" />
+  </svg>
+</div>
