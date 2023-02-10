@@ -1,6 +1,29 @@
 <h5>Version 0.0.1</h5><br>
 <h1 align=center>T3a04 CSS by Ryan</h1>
 <style> 
+ div.a {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+}
+
+div.b {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: skewY(20deg); /* IE 9 */
+  transform: skewY(20deg);
+}
+
+div.c {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: scaleY(1.5); /* IE 9 */
+  transform: scaleY(1.5);
+}
  #resize{
   border: 2px solid;
   padding: 20px; 
@@ -108,4 +131,16 @@ This is offset property:<br>
 This is resize property:<br>
 <div id="resize">
   <p>To resize: Click and drag the bottom right corner of this div element.</p>
-</div>
+</div><br>
+<u>This is the transform property:</u><br>
+
+transform: rotate(20deg):<br>
+<div class="a">Hello World!</div>
+<br>
+
+transform: skewY(20deg):<br>
+<div class="b">Hello World!</div>
+<br>
+
+transform: scaleY(1.5):<br>
+<div class="c">Hello World!</div>
