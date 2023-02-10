@@ -1,6 +1,14 @@
 <h5>Version 0.0.1</h5><br>
 <h1 align=center>T3a04 CSS by Ryan</h1>
 <style> 
+.mask1 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
  #parentDIV{
   position: relative;
   width: 60%;
@@ -61,6 +69,12 @@ This is an animation:<br>
 <div id="animation"></div><br>
 This is inset property:<br>
 <div id="parentDIV">
-  <div id="myDIV">This DIV has a size defined by the distance of 35 pixels to the parent DIV element, on all four sides.</div>
+  <div id="myDIV">This DIV has a size defined by the distance of 20 pixels to the parent DIV element, on all four sides.</div>
+</div><br>
+This is mask image property:<br>
+<div class="mask1">
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
 </div>
 
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
