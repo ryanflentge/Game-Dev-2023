@@ -1,6 +1,18 @@
 <h5>Version 0.0.1</h5><br>
 <h1 align=center>T3a04 CSS by Ryan</h1>
 <style> 
+ #parentDIV{
+  position: relative;
+  width: 60%;
+  height: 250px;
+  border: solid black 1px;
+}
+
+#myDIV{
+  position: absolute;
+  background-color: lightblue;
+  inset: 35px;
+}
   div {
   width: 100px;
   height: 100px;
@@ -47,4 +59,7 @@ I do CSS inside the tag. It overpowers all other methods<br>
 <br>
 This is an animation:<br>
 <div></div><br>
+<div id="parentDIV">
+  <div id="myDIV">This DIV has a size defined by the distance of 35 pixels to the parent DIV element, on all four sides.</div>
+</div>
 
