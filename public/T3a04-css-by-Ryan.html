@@ -1,6 +1,13 @@
 <h5>Version 0.0.1</h5><br>
 <h1 align=center>T3a04 CSS by Ryan</h1>
 <style> 
+ #resize{
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
   #frameDiv {
     width: 400px;
     height: 170px;
@@ -97,4 +104,9 @@ This is offset property:<br>
   <svg fill="none" stroke="gray" stroke-width="2" stroke-dasharray="5,5">
     <path d="M 50 80 C 150 -20 250 180 350 80" />
   </svg>
+</div><br>
+This is resize property:<br>
+<div id="resize">
+  <p>Let the user resize both the height and the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
 </div>
