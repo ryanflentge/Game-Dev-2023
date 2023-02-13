@@ -1,32 +1,7 @@
 <h5>Version 0.0.1</h5><br>
 <h1 align=center>T3a04 CSS by Ryan</h1>
 <style> 
-$(document).ready(function(){
-setColor();
-function setColor(){
-     var colors=["#33ccff", "#ffff99","#cc6699"];
-      var color =Math.floor(Math.random() * (colors.length));
-  
-    $('body').toggleClass('clicked');
-    setTimeout(function(){
-     $('.clicked').css("background-color", colors[color]);
-    $('body').removeClass('clicked');
-    }, 200)  
-  }
-  
-   $('#gen').on("click", function(){
-    setColor();
-  });
-  
-  
-});
-body{
-  background-color: grey;
-  transition:background-color 0.5s ease;
-}
-.clicked {
-  background:lightgreen;
-}
+
   #transition{
   width: 100px;
   height: 100px;
@@ -195,6 +170,3 @@ document.body.style.backgroundColor= "green";
 }
 </script>
 <br>
-<body>
-     <button class="btn btn-primary" id="gen">Generate</button></body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
