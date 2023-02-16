@@ -1,11 +1,24 @@
 <style>
   function myFunction(1)  
-  #animation{
+  div.a{
   width: 100px;
   height: 100px;
   background: red;
   position: relative;
   animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+  function myFunction(2)
+    div.b{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 2s infinite;
 }
 
 @keyframes mymove {
@@ -34,9 +47,18 @@
                                                     }"><br>
 <div id="myDiv02">...</div><br>
 
+<input id="myNum03" type=number value="4"><input  id="myNum04" type=number value"4"><br>
+<input type=button value="multiply those" onclick="{
+                                                   let myIn03 = parseFloat(document.getElementById('myNum03').value)
+                                                   let myIn04 = parseFloat(document.getElementById('myNum04').value)
+                                                   let myAnswer03 = myIn03*myIn04
+                                                   document.getElementById('myDiv03').innerHTML = myIn03 + 'times' + myIn04 '=' + myAnswer03
+                                                   }"><br>
+<div id="myDiv03">...</div><br>
+
 <input id="myQuestion01" type=text><br>
-<input type=button value="Answer Question" onclick="{
+<input type=button value="Faster" onclick="{
 
                                                                                                                               }"><br>
-<div id="myDiv03">...</div><br>
+<div class="a">...</div><br>
 
