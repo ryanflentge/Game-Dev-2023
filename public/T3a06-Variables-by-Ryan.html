@@ -1,1 +1,27 @@
-hui
+<h5>Version 0.0.1</h5>
+
+<a href="">Good reference to Variables is Javascript an other languages</a><br>
+
+<h4>Example input output code</h4>
+<pre>
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = myIn01
+</pre>
+
+<h4>Example Working Code</h4>
+
+<input id="myText01" type=text value="The Dog"><br>
+<input type=button value="Show Variable" onclick="{
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = myIn01
+}"><br>
+
+<input type=button value="Using No Variable" onclick="{
+     document.getElementById('myDiv01').innerHTML =
+         document.getElementById('myText01').value
+}"><br>
+
+<div id="myDiv01">...</div>
+
+
+
