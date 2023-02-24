@@ -85,3 +85,16 @@ document.getElementById("demo").innerHTML = greeting;
                         document.getElementById('myDiv03').innerHTML = myIn03 + ' is odd'}
   }">
 <div id="myDiv03">...</div>
+
+<h4>Prime Number Checker</h4>
+
+ <input id="myNum04" type=number value="3"><br>
+  
+  <input type=button value="Check if number is prime" onclick="{
+       let myIn04 = parseFloat(document.getElementById('myNum04').value)
+       if (myIn04 % i==0){
+                        document.getElementById('myDiv04').innerHTML = myIn04 + ' is even'
+                                                                              } else {
+                        document.getElementById('myDiv04').innerHTML = myIn04 + ' is odd'}
+  }">
+<div id="myDiv04">...</div>
