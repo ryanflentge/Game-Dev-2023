@@ -60,3 +60,13 @@ if (time < 10) {
 document.getElementById("demo").innerHTML = greeting;
 </script>
 
+ <input id="myNum02" type=number value="4"><br>
+  
+  <input type=button value="Simple if statement for decision making" onclick="{
+       let myIn02 = parseFloat(document.getElementById('myNum02').value)
+       if (myIn02 >= 0){
+                        document.getElementById('myDiv02').innerHTML = myIn02 + ' is positive'
+                                                                              } else {
+                        document.getElementById('myDiv02').innerHTML = myIn02 + 'is negative'}
+  }">
+<div id="myDiv02">...</div>
