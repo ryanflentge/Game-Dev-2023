@@ -70,3 +70,14 @@ document.getElementById("demo").innerHTML = greeting;
                         document.getElementById('myDiv02').innerHTML = myIn02 + ' is negative'}
   }">
 <div id="myDiv02">...</div>
+
+ <input id="myNum03" type=number value="4"><br>
+  
+  <input type=button value="Check if number is odd or even" onclick="{
+       let myIn03 = parseFloat(document.getElementById('myNum03').value)
+       if (myIn03 % 2==0){
+                        document.getElementById('myDiv03').innerHTML = myIn03 + ' is even'
+                                                                              } else {
+                        document.getElementById('myDiv03').innerHTML = myIn03 + ' is odd'}
+  }">
+<div id="myDiv03">...</div>
