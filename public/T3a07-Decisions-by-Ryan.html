@@ -51,11 +51,11 @@ if (myHour < 18) {
 const time = new Date().getHours();
 let greeting;
 if (time < 10) {
-  greeting = "Good morning";
+  greeting = "its before 10am";
 } else if (time < 20) {
-  greeting = "Good day";
+  greeting = "its before 8pm";
 } else {
-  greeting = "Good evening";
+  greeting = "its after 8pm";
 }
 document.getElementById("demo").innerHTML = greeting;
 </script>
