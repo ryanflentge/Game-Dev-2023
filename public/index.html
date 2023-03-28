@@ -1,53 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Browser inference demo</title>
+<h5> Version 0.0.3</h5>
+<style>
+  body {
+background-color: #bde8ff;
+}
+  h2 {font="Sans-Serif"
+  }
+ 
+</style>
 
-    <style>
-        #features {
-            width: 50%;
-            font-size: 18px;
-        }
+<h1 align=center><p style="color:#072536";  text-shadow:
+    -1px -1px 0 #eeeee4,
+    1px -1px 0 #eeeee4,
+    -1px 1px 0 #eeeee4,
+    1px 1px 0 #eeeee4,  
+    -2px 0 0 #eeeee4,
+    2px 0 0 #eeeee4,
+    0 2px 0 #eeeee4,
+    0 -2px 0 #eeeee4;><font face="Sans-Serif">index.html for Game Dev by Ryan</font></p> </h1>
+  <h2>My Main Github</h2>
+<h3><li><a href="https://github.com/ryanflentge?tab=repositories">My Github Repository Full URL</a></h3> <br>
+  <h2>My Main Website</h2>
+ <h3><li><a href="https://ryanflentge.github.io/Game-Dev-2023/public/">My Game Dev Website Full URL</a></h3><br>
+  <h2>All Game Dev Assignments</h2>
+    <h3><li><a href="https://github.com/hpssjellis/high-school-javascript-game-dev-assignment-images">All Game Dev Assignments Full URL</a></h3><br>
+  <hr>
 
-        #results {
-            font-family: monospace;
-            white-space: pre;
-        }
-    </style>
-</head>
-<body>
-    <h1></h1>
-
-    <p>
-        <input type="text" id="features" placeholder="Paste your features here">
-    </p>
-    <p>
-        <button id="run-inference">Run inference</button>
-    </p>
-    <p id="results"></p>
-
-    <script src="edge-impulse-standalone.js"></script>
-    <script src="run-impulse.js"></script>
-    <script>
-        (async () => {
-            var classifier = new EdgeImpulseClassifier();
-            await classifier.init();
-
-            let project = classifier.getProjectInfo();
-            document.querySelector('h1').textContent = project.owner + ' / ' + project.name + ' (version ' + project.deploy_version + ')';
-
-            document.querySelector('#run-inference').onclick = () => {
-                try {
-                    let features = document.querySelector('#features').value.split(',').map(x => Number(x.trim()));
-                    let res = classifier.classify(features);
-                    document.querySelector('#results').textContent = JSON.stringify(res, null, 4);
-                }
-                catch (ex) {
-                    alert('Failed to classify: ' + (ex.message || ex.toString()));
-                }
-            };
-        })();
-    </script>
-</body>
-</html>
+    
+  <h2>My Work</h2>
+  <h3><li><a href="T3a01-basic-web-by-Ryan.html">T3a01-basic-web-by-Ryan.html</a>
+  <li><a href="T3a02-Lists-and-tables-by-Ryan.html">T3a02-lists-tables-by-Ryan.html</a>
+  <li><a href="T3a03-forms-by-Ryan.html">T3a03-forms-by-Ryan.html</a>
+  <li><a href="T3a04-css-by-Ryan.html">T3a04-css-by-Ryan.html</a>
+  <li><a href="T3a05-input-output-by-Ryan.html">T3a05-input-output-by-Ryan.html</a>
+  <li><a href="T3a06-Variables-by-Ryan.html">T3a06-Variables-by-Ryan.html</a>
+  <li><a href="T3a07-Decisions-by-Ryan.html">T3a07-Decisions-by-Ryan.html</a>
+  <li><a href="T3a08-Loops-by-Ryan.html">T3a08-Loops-by-Ryan.html</a>   
+  <li><a href="T3a09-Functions-by-Ryan.html">T3a09-Functions-by-Ryan.html</a>
+  <li><a href="T3a10-Events-by-Ryan.html">T3a10-Events-by-Ryan.html</a>  
+  <li><a href="T3aReview-by-Ryan.html">T3aReview-by-Ryan.html</a>
+  <li><a href="browser">Machine Learning Site</a>
+  </h3>
