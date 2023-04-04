@@ -9,6 +9,7 @@
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'e') {myTemp  = 'f'} 
       if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'o') {myTemp  = 'b'} 
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
@@ -24,7 +25,8 @@
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'f') {myTemp  = 'e'} 
-      if (myString[myLoop] == 'i') {myTemp  = 'h'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'h'}
+      if (myString[myLoop] == 'b') {myTemp  = 'o'} 
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea03').value = myString.join('')
