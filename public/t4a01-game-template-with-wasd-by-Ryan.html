@@ -1,14 +1,33 @@
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg">
+Version 0.0.1<br>
 
-<h1 align=center><font color=red>T4A04 Maze by Ryan</font></h1>
 
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"     onkeydown="{
+   let myKey = event.key
+   //  let myKey = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey
+   if (myKey == 'd') {
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+     //    myCheckHit()
+     // } ,20)
+     // or do the following
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
+      myCheckHit()
+   }
+   // put your other keydowns here.
+}">
+
+<h1 align=center>t4a01-game-template-with-wasd-by-fred</h1>
+<br><br><br><br>
 
 <script>
 
    // global variables here
    let myGlobalX = 0
    let myClock
-
+   let myInterval=0;
 
    // global functions here
 function myHitOther(my1,my2){
@@ -30,36 +49,24 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
-
    if ( myHitOther('myImg01','myImg02') ){
-       //alert('you lose')
-      document.getElementById('myImg01').style.left = '20px'
-   }   
-   
-   if ( myHitOther('myImg01','myImg03') ){
-       //alert('you lose')
-      document.getElementById('myImg01').style.left = '20px'
-   }   
-   
-
-
-   // YOU WIN and go to next level!
-
-   if ( myHitOther('myImg01','myImg04') ){
-       alert('You Win, now go to the next level')
-      document.getElementById('myImg01').style.left = '20px'
-      location = 'https://www.google.ca'
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a13-keydown.html'  // go to your next level
    }
 
-   // more if statements here
 
-}
+   // more if statements here like the above
+
+
+
+}  // end of myCheckHit()
 
 
 </script>
 
-
-
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
+<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="myImage02.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
@@ -73,20 +80,10 @@ function myCheckHit(){
 }">
 
 
-<input type=button value="Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
-}">
-
-<input type=button value="Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
 
 
-
-
-<img id="myImg01" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
-<img id="myImg02" src="myImgNew.jpg"  style="position:absolute; width:10px; height:200px; left:350px; top:90px;">
-<img id="myImg03" src="myImgNew.jpg"  style="position:absolute; width:200px; height:10px; left:500px; top:400px;">
-<img id="myImg04" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:800px; top:400px;">
+<div id="myDiv01" style="color:yellow">..</div>
