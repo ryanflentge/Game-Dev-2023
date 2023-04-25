@@ -6,14 +6,10 @@ Version 0.0.1<br>
    //  let myKey = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey
    if (myKey == 'd') {
-     
-     clearInterval(myInterval)
-     myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
-         myCheckHit()
-      }
     
-   }
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 7
+      myCheckHit()
+      }
   
 }">
 
