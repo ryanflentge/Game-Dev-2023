@@ -57,6 +57,10 @@ function myCheckHit(){
   if( parseInt(document.getElementById('myImg01').style.left) < -10  ){
       myHorizontalSpeed = myHorizontalSpeed * -1
    }
+  
+    if( parseInt(document.getElementById('myImg01').style.top) > window.innerHeight - document.getElementById('myImg01').height ){
+      myVerticalSpeed *= -1
+   }
 
 
 
